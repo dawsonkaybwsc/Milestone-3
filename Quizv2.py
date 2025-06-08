@@ -1,6 +1,7 @@
 def country_quiz():
     questions = [
         {
+
             "question": "1. What is the longest river in the world?",
             "options": ["A. Amazon", "B. Nile", "C. Ganges", "D. Volga"],
             "answer": "B"
@@ -35,6 +36,7 @@ def country_quiz():
     score = 0
 
     print(" Welcome to the Countries Quiz! \n")
+    print(" Just to let you know your infortmation is being stored in order for this test to properly work ")
 
     for q in questions:
         print(q["question"])
