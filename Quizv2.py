@@ -27,7 +27,7 @@ def country_quiz():
             "answer": "A"
         },
         {
-            "question": "6. What is the name of the largest national park in Wales?",
+            "question": "6. What continent has the highest population",
             "options": ["A. Europe", "B. Africa", "C. Asia", "D. North America"],
             "answer": "C"
         }
@@ -35,8 +35,8 @@ def country_quiz():
 
     score = 0
 
-    print(" Welcome to the Countries Quiz! \n")
-    print(" Just to let you know your infortmation is being stored in order for this test to properly work ")
+    print(" Welcome to the country quiz \n")
+    print(" all information you are sending is being stored in order for this test to properly work ")
 
     for q in questions:
         print(q["question"])
@@ -44,10 +44,10 @@ def country_quiz():
             print(opt)
         user_answer = input("Your answer (A,B,C,D): ").strip().upper()
         if user_answer == q["answer"]:
-            print(" Correct!\n")
+            print(" Correct\n")
             score += 1
         else:
-            print(f" Wrong! The correct answer was {q['answer']}.\n")
+            print(f" Incorrect, The correct answer was {q['answer']}.\n")
 
     print(f" You got {score} out of {len(questions)} correct!")
 
